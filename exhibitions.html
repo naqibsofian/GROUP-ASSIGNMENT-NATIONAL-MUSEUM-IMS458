@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Exhibitions - Museum Website</title>
+</head>
+<body>
+    <header>
+        <img src="images/museum-logo.png" alt="Museum Logo" onclick="location.href='index.html'">
+        <h1>MUZIUM NEGARA</h1>
+        <nav>
+            <ul>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('visitorsDropdown')"><a href="visitors.html">Visitors</a></button>
+                    <div id="visitorsDropdown" class="dropdown-content">
+                        <a href="gettinghere.html">Getting Here</a>
+                        <a href="ticket.html">Ticket</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('whatsOnDropdown')"><a href="gallery.html">Gallery</a></button>
+                    <div id="whatsOnDropdown" class="dropdown-content">
+                        <a href="exhibitions.html">Exhibitions</a>
+                        <a href="events.html">Events</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('activityDropdown')"><a href="activity.html">Activity</a></button>
+                    <div id="activityDropdown" class="dropdown-content">
+                        <a href="collections.html">Collections</a>
+                        <a href="research.html">Research</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('aboutUsDropdown')"><a href="about-us.html">About Us</a></button>
+                    <div id="aboutUsDropdown" class="dropdown-content">
+                        <a href="history.html">History</a>
+                        <a href="organization.html">Organization</a>
+                    </div>
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery">
+        <ul class="bullet-list">
+            <h2>Exhibitions</h2>
+            <p>Exhibition is the core of the Department of Museums Malaysia. Exhibition is classified into Permanent Exhibition, Temporary Exhibition, Special Exhibition and Mobile Exhibition (outreach in history, culture, heritage and the natural history). Museum Services Division is a key driving force in shaping or implementing an exhibition.</p>
+            <p><strong>Exhibition and Expansion Division</strong><br>
+                Museum Services Division acts in providing expert advice and consultation to state museums, government and private agencies and higher learning institutions in museum management, establishment and exhibition as well as planning and implementing services such as the department’s new museums exhibitions and renovation and upgrading works.
+            </p>
+            <p><strong>Functions of Exhibition and Expansion Division</strong><br></p>
+                <p>1. Providing advice and expertise to external agencies and other museums in museums related fields (establishment of museums, exhibitions, display of artifacts and other related matters). </p>
+                <p>2. Providing advice and expertise to external agencies and other museums in museums related fields (establishment of museums, exhibitions, display of artifacts and other related matters). </p>
+                <p>3. Implementing outreach programs through exhibitions and development (R & D) to the museum as a whole. </p>
+                <p>4. Monitoring and setting of standards categories for museums under the department and other museums. </p>
+           
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email:  pr.mn[at]jmm.gov.my</p>
+            <p>Phone: (+60) 03-2267 1111</p>
+        </div>
+        <div class="footer-section">
+            <h4>Operating Time</h4>
+            <p>-Open daily from 9am to 5pm (last admission in 4.30 pm)</p>
+            <p>-Closed on the first and second day of Eid al-Fitr and first day of Eid al-Adha</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/muziumnegaramalaysia/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://x.com/muziumnegarasmi?mx=2" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/muziumnegara/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('header nav');
+            if (nav.className === "") {
+                nav.className += "responsive";
+            } else {
+                nav.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

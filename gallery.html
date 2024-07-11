@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Visitors - Museum Website</title>
+</head>
+<body>
+    <header>
+        <img src="images/museum-logo.png" alt="Museum Logo" onclick="location.href='index.html'">
+        <h1>MUZIUM NEGARA</h1>
+        <nav>
+            <ul>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('visitorsDropdown')"><a href="visitors.html">Visitors</a></button>
+                <div id="visitorsDropdown" class="dropdown-content">
+                    <a href="gettinghere.html">Getting Here</a>
+                    <a href="ticket.html">Ticket</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('whatsOnDropdown')"><a href="gallery.html">Gallery</a></button>
+                <div id="whatsOnDropdown" class="dropdown-content">
+                    <a href="exhibitions.html">Exhibitions</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('activityDropdown')"><a href="activity.html">Activity</a></button>
+                <div id="activityDropdown" class="dropdown-content">
+                    <a href="collections.html">Collections</a>
+                    <a href="research.html">Research</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('aboutUsDropdown')"><a href="about-us.html">About Us</a></button>
+                <div id="aboutUsDropdown" class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="organization.html">Organization</a>
+                </div>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </ul>
+        </nav>
+    </header>
+    <div class="gallery">
+        <h1>NATIONAL MUSEUM GALLERY</h1>
+        <section class="picture-section">
+            <div class="row">
+                <div class="column">
+                    <img src="images/gallery.png" alt="Picture 1" class="pic1">
+                    <h2>Gallery A: Pre History</h2>
+                    <div class="description">This gallery takes the visitors on an exploration of the process behind the Earth’s formation as well as provides an insight into early civilization through each of the artifacts that are displayed here. Visitors also have the opportunity to learn the evolution of stone tools used during the Paleolithic, Hoabinhian and Neolithic Age. Among the highlight artefact is the replica of Perak Man, the oldest and near intact human skeleton in South East Asia found in this country approximately 10,000 – 11,000 years ago.</div>
+                </div>
+                <div class="column">
+                    <img src="images/gallery2.png" alt="Picture 2" class="pic2">
+                    <h2>Gallery B: Malay Kingdoms</h2>
+                    <div class="description">This gallery traces the development of Malay civilization through the formation of the Malay Kingdoms in the Malay Archipelago, particularly the kingdoms that existed in the Malay Peninsular and Borneo Islands. The focus of this gallery is primarily on the Malay Melaka Sultanate, which was the golden period in the history of the Malay-Islamic civilization in this region. Artefact of the Avalokiteshvara statue, recognized as the National Heritage Artefact in 2009 is among the important collection exhibited in this gallery.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/gallery3.png" alt="Picture 3">
+                    <h2>Gallery C: Colonial Era</h2>
+                    <div class="description">The gallery led visitors to learn the history of the colonial era that took place in Malaya, Sabah and Sarawak. Among the foreign forces that once colonized the country were Portuguese, Dutch, British and Japanese. The gallery also shows the factors and effects of this colonialism that have seen changes to the political, economic and social aspects of society in the country. The replica of the Golden Flower which is a special gift delivered by Malay rulers in the north of the Malay Peninsular to the Siamese King in Bangkok is one of the collection attractions in the gallery.</div>
+                </div>
+                <div class="column">
+                    <img src="images/gallery4.png" alt="Picture 4">
+                    <h2>Gallery C: Malaysia Today</h2>
+                    <div class="description">This gallery exposes the early history of the nationalist movement championed by national figures from various races and of differing political backgrounds, beginning from the British intervention until independence was achieved in 1957. This gallery also highlights the achievements enjoyed by the country after its independence until the formation of Malaysia in 1963 and today’s events. Among the important documents on display is the original copy of the letter of appointment of His Majesty, the XIV Yang di-Pertuan Agong, the Head of State of Malaysia.</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email:  pr.mn[at]jmm.gov.my</p>
+            <p>Phone: (+60) 03-2267 1111</p>
+        </div>
+        <div class="footer-section">
+            <h4>Operating Time</h4>
+            <p>-Open daily from 9am to 5pm (last admission in 4.30 pm)</p>
+            <p>-Closed on the first and second day of Eid al-Fitr and first day of Eid al-Adha</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/muziumnegaramalaysia/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://x.com/muziumnegarasmi?mx=2" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/muziumnegara/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('header nav');
+            if (nav.className === "") {
+                nav.className += "responsive";
+            } else {
+                nav.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

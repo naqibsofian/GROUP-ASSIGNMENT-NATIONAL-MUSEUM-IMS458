@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home - Museum Website</title>
+</head>
+<body>
+    <main>
+    <header>
+        <img src="images/museum-logo.png" alt="Museum Logo" onclick="location.href='index.html'">
+        <h1>MUZIUM NEGARA</h1>
+        <nav>
+            <ul>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('visitorsDropdown')"><a href="visitors.html">Visitors</a></button>
+                <div id="visitorsDropdown" class="dropdown-content">
+                    <a href="gettinghere.html">Getting Here</a>
+                    <a href="ticket.html">Ticket</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('whatsOnDropdown')"><a href="gallery.html">Gallery</a></button>
+                <div id="whatsOnDropdown" class="dropdown-content">
+                    <a href="exhibitions.html">Exhibitions</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('activityDropdown')"><a href="activity.html">Activity</a></button>
+                <div id="activityDropdown" class="dropdown-content">
+                    <a href="collections.html">Collections</a>
+                    <a href="research.html">Research</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('aboutUsDropdown')"><a href="about-us.html">About Us</a></button>
+                <div id="aboutUsDropdown" class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="organization.html">Organization</a>
+                </div>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="tiber">
+        <h2>WELCOME TO NATIONAL MUSEUM OF MALAYSIA</h2>
+        <a class="button-two" href="gallery.html">EXPLORE</a>
+    </div>
+
+    </main>
+</header>
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email:  pr.mn[at]jmm.gov.my</p>
+            <p>Phone: (+60) 03-2267 1111</p>
+        </div>
+        <div class="footer-section">
+            <h4>Operating Time</h4>
+            <p>-Open daily from 9am to 5pm (last admission in 4.30 pm)</p>
+            <p>-Closed on the first and second day of Eid al-Fitr and first day of Eid al-Adha</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/muziumnegaramalaysia/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://x.com/muziumnegarasmi?mx=2" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/muziumnegara/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('header nav');
+            if (nav.className === "") {
+                nav.className += "responsive";
+            } else {
+                nav.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

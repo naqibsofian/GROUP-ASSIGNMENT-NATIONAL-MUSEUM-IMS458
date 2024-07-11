@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>History - Museum Website</title>
+</head>
+<body>
+    <header>
+        <img src="images/museum-logo.png" alt="Museum Logo" onclick="location.href='index.html'">
+        <h1>MUZIUM NEGARA</h1>
+        <nav>
+            <ul>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('visitorsDropdown')"><a href="visitors.html">Visitors</a></button>
+                <div id="visitorsDropdown" class="dropdown-content">
+                    <a href="gettinghere.html">Getting Here</a>
+                    <a href="ticket.html">Ticket</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('whatsOnDropdown')"><a href="gallery.html">Gallery</a></button>
+                <div id="whatsOnDropdown" class="dropdown-content">
+                    <a href="exhibitions.html">Exhibitions</a>
+                    <a href="events.html">Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('activityDropdown')"><a href="activity.html">Activity</a></button>
+                <div id="activityDropdown" class="dropdown-content">
+                    <a href="collections.html">Collections</a>
+                    <a href="research.html">Research</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('aboutUsDropdown')"><a href="about-us.html">About Us</a></button>
+                <div id="aboutUsDropdown" class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="organization.html">Organization</a>
+                </div>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="column-content wow bounceInRight">
+          <h3 style="text-align: center;" class="header">HISTORY</h3>
+          <p style="text-align:left" class="grid-container">The history of museum development in Malaysia began in 1883 when the British government established the Perak Museum in Taiping. This was followed by the establishment of the Sarawak Museum in Kuching in 1888 and then the Selangor Museum in 1899.</p>
+          <p style="text-align:left" class="grid-container">In 1910, the management of the Perak Museum and Selangor Museum was consolidated under the Department of Museums of the Federated Malay States. In 1930, the management was separated again as a step towards decentralization by the British government.</p>
+          <p style="text-align:left" class="grid-container">Part of the Selangor Museum building was destroyed due to bombing by the Allied Air Force on March 10, 1945. As a result, a significant portion of the collection was destroyed.</p>
+          <p style="text-align:left" class="grid-container">Two years after independence, in 1959, the government appointed architect Encik Ho Kok Hoe to design the National Museum, which was planned to be built on the site of the destroyed Selangor Museum.</p>
+          <p style="text-align:left" class="grid-container">Construction began in 1962 and was completed on August 31, 1963. The National Museum was officially opened by the third Yang di-Pertuan Agong, Tuanku Syed Putra Al-Haj Ibni Almarhum Syed Hassan Jamalullail</p>
+          <p style="text-align:left" class="grid-container">The architectural design of the National Museum building features aesthetic elements and carvings characteristic of traditional Malay palace architecture. This beautifully designed structure was personally selected by Tunku Abdul Rahman Putra Al-Haj, the first Prime Minister of Malaysia</p>
+          <p style="text-align:left" class="grid-container">The architecture of the National Museum building is supported by 26 concrete pillars that have been modified to retain the features of traditional Malay palaces. The concept of 26 pillars is based on the combination of 13 pillars on the eastern side and 13 on the western side of the building, symbolizing Malaysia's formation from 13 states</p>
+        </div>
+      </div>
+      
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img src="images/H2.png" width="300px" height="400px" />
+          <div class="caption-container">
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="images/H1.png" width="300px" height="200px" />
+          <div class="caption-container">
+          </div>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/H3.png" width="300px" height="200px" />
+            <div class="caption-container">
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <img src="images/H4.png" width="300px" height="200px" />
+            <div class="caption-container">
+            </div>
+          </div>
+       
+      </div>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email:  pr.mn[at]jmm.gov.my</p>
+            <p>Phone: (+60) 03-2267 1111</p>
+        </div>
+        <div class="footer-section">
+            <h4>Operating Time</h4>
+            <p>-Open daily from 9am to 5pm (last admission in 4.30 pm)</p>
+            <p>-Closed on the first and second day of Eid al-Fitr and first day of Eid al-Adha</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/muziumnegaramalaysia/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://x.com/muziumnegarasmi?mx=2" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/muziumnegara/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('header nav');
+            if (nav.className === "") {
+                nav.className += "responsive";
+            } else {
+                nav.className = "";
+            }
+        }
+    </script>
+</body>
+</html>
